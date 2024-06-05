@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test" : "cd ../expressTS && npm run reset && cd ../nextJS && cypress open" 
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -24,6 +25,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@simonsmith/cypress-image-snapshot": "^9.0.3",
+    "cypress": "^13.11.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
